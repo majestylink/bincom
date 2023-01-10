@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-z1-^@ttm)o&wc1fgc%%x@8of9@-t%o86vaggthh0^(vxd7*$+1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'https://web-production-38b6.up.railway.app/']
 
 
 # Application definition
@@ -138,3 +138,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Simplified static file serving.
 # https://pypi.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+CSRF_TRUSTED_ORIGINS = ['https://web-production-3640.up.railway.app']
