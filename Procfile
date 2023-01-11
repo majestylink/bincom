@@ -1,1 +1,1 @@
-web: python manage.py migrate && gunicorn bincomTest.wsgi
+web: gunicorn bincomTest.wsgi
